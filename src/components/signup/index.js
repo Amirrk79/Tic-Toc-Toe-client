@@ -27,7 +27,7 @@ function SignUp() {
         }
     }
     return <div className={classNames(styles.main , 'row p-0 justify-content-center')}>
-        <div className={classNames(styles.form , 'col-4')}>
+        <div className={classNames(styles.form , 'col-10 col-lg-4 col-xl-4 col-xxl-4')}>
         <Input name='playerName' onChange={handleChange} placeHolder='Enter your username...' />
         <Button onClick={setPlayerName} className={styles.btn} content='Submit' />
         <span className={styles.errors}>{formData.error}</span>
