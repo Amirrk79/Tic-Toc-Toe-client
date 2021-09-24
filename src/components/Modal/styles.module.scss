@@ -1,0 +1,33 @@
+@import '../../styles/vars.scss';
+
+.main {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+}
+.main-disabled {
+  position: absolute;
+}
+.enabled {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  transition: 0.8s;
+}
+
+.disabled {
+  position: absolute;
+  top: -1300px;
+}
+
+.fade-modal {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

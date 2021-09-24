@@ -1,0 +1,15 @@
+@import '../../styles/vars';
+
+.btn {
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  height: 40px;
+  width: 100px;
+  color: white;
+  font-size: 20px;
+  background-color: $Green;
+  &:hover {
+    background-color: $Green-hover;
+  }
+}

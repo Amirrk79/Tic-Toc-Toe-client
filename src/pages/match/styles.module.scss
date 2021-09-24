@@ -1,0 +1,311 @@
+@import '../../styles/vars.scss';
+
+.loading-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loading-text {
+  font-size: 20px;
+  margin-bottom: 7px;
+}
+
+.loading {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.code {
+  position: absolute;
+  width: auto;
+  top: 0;
+  font-size: 20px;
+  cursor: text;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.alert {
+  color: $Green;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.game-container {
+  background-color: $White;
+  width: 100%;
+  height: 700px;
+  box-shadow: rgb(0 27 56 / 8%) 0px 4px 16px;
+  border-radius: 8px;
+}
+.enemy-turn-text {
+  color: $Red;
+  font-size: 20px;
+}
+.your-turn-text {
+  color: $Green;
+  font-size: 20px;
+}
+.game-part {
+  height: 700px;
+  width: 100%;
+}
+.game-part:not(:last-child) {
+  border-right: 1px solid $Gray;
+}
+.players {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.you {
+  color: $Green;
+}
+.enemy {
+  color: $Red;
+}
+
+.player-detail-container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.player-detail-container:not(:first-child) {
+  margin-top: 20px;
+}
+
+.your-id {
+  font-size: 14px;
+  padding: 5px;
+  border: 1px dashed $Green-light;
+  border-radius: 8px;
+  font-weight: bold;
+  width: 100px;
+  text-align: center;
+}
+.enemy-id {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px;
+  border: 1px dashed $Red-light;
+  border-radius: 8px;
+  width: 100px;
+  text-align: center;
+}
+
+.game-div {
+  display: flex;
+  width: 100%;
+  height: 700px;
+  justify-content: center;
+}
+
+.game {
+  align-self: center;
+  justify-self: center;
+  width: 90%;
+  height: auto;
+}
+
+.game-block {
+  height: 100px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+  cursor: pointer;
+  background-color: $White;
+  border: 2px solid $Gray;
+  margin-right: -2px;
+  margin-top: -2px;
+  margin-bottom: -2px;
+}
+.game-block-passive {
+  height: 100px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+  cursor: not-allowed;
+  background-color: $White;
+  border: 2px solid $Gray;
+  margin-right: -2px;
+  margin-top: -2px;
+  margin-bottom: -2px;
+}
+
+.win-info {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  div {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    div:first-child {
+      margin-bottom: 30px;
+    }
+    div {
+      display: flex;
+      flex-direction: row;
+      width: 300px;
+      justify-content: space-between;
+      span {
+        font-size: 30px;
+        color: $White;
+      }
+    }
+  }
+}
+
+.win-info-activate {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  transition: 0.6s;
+  div {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    div:first-child {
+      margin-bottom: 30px;
+    }
+    div {
+      display: flex;
+      flex-direction: row;
+      width: 300px;
+      justify-content: space-between;
+      span {
+        font-size: 30px;
+        color: $White;
+      }
+    }
+  }
+}
+
+.retry-icon {
+  font-size: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.end-icon {
+  font-size: 45px;
+  height: 50px;
+  cursor: pointer;
+  color: $Red;
+}
+
+.win-tooltips {
+  background-color: $White !important;
+  opacity: 1 !important;
+  color: $Black !important;
+  font-size: 20px !important;
+  width: auto !important;
+}
+
+.chat-part {
+  height: 700px;
+  width: 100%;
+  position: relative;
+}
+
+.input-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  form {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    input {
+      outline: 0;
+      background-color: $MainBackground;
+      border: 1px solid $Gray;
+      border-radius: 8px;
+      width: 80%;
+      height: 40px;
+      font-size: 17px;
+    }
+    button {
+      width: 19%;
+      border-radius: 8px;
+      border: none;
+      background-color: $Green;
+      color: $White;
+      &:hover {
+        background-color: $Green-hover;
+      }
+    }
+  }
+}
+
+.chat-container {
+  width: 100%;
+  height: 660px;
+  max-height: 660px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  span {
+    color: $Red;
+    padding: 10px;
+    font-size: 16px;
+  }
+}
+.chat-container::-webkit-scrollbar {
+  width: 0.3em;
+}
+
+.chat-container::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.chat-container::-webkit-scrollbar-thumb {
+  background-color: $Green;
+  outline: 1px solid $Green;
+  &:hover {
+    background-color: $Green-hover;
+    outline: 1px solid $Green-hover;
+  }
+}
+
+.enemy-message {
+  width: 100%;
+  padding: 10px;
+}
+
+.message {
+  width: 100%;
+  padding: 10px;
+  text-align: right;
+  span {
+    color: $Green;
+  }
+}
