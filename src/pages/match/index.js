@@ -221,7 +221,7 @@ function MatchPage() {
     
     return <>
     {isLoading ? <div className={styles['loading-container']}>
-      <div className={classNames(styles.loading , 'col-4')}>
+      <div className={classNames(styles.loading , 'col-10 col-lg-4 col-xl-4 col-xxl-4')}>
         <div data-tip="Copy to your clipboard..." onClick={handleCopyCode} className={styles.code}>
         <ReactTooltip effect='solid' />
           <div>

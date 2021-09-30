@@ -34,7 +34,7 @@ const handleJoinToMatch = (e) => {
 
     return <>
     <div className={classNames( styles.main , 'row p-0 justify-content-center')}>
-        <div className={classNames(styles.menu , 'col-4')}>
+        <div className={classNames(styles.menu , 'col-10 col-lg-4 col-xl-4 col-xxl-4')}>
         <h1 className={styles.title}>Tic Tac Toe</h1>
     <Link className={styles.btn} to={{
         pathname: `/match/${matchId}`,
